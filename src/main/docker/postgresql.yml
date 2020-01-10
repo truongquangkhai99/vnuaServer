@@ -1,0 +1,11 @@
+version: '2'
+services:
+  vnuaserver-postgresql:
+    image: postgres:11.6
+    # volumes:
+    #     - ~/volumes/jhipster/vnuaServer/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=vnuaServer
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
