@@ -1,0 +1,50 @@
+entity Student {
+	studentID Integer,
+    fullname String,
+    sex String,
+    birthDay LocalDate,
+    birthPlace String,
+    chuyenNganh String,
+    lop String,
+    khoa String,
+    khoaHoc String,
+    heDaoTao String,
+    coVanHocTap String,
+    
+}
+
+entity Score {
+	tenMon String,
+    maMon String,
+    tc Integer,
+    ktPercent Integer,
+    thiPercent Integer,
+    diemChuyenCan Integer,
+    diemQuaTrinh Float,
+    thi10 Float,
+    tk110 Float,
+    tk10 Float,
+    tk1ch String,
+    tkch String,
+    studentId Integer
+}
+
+entity MeanScore {
+	diemtbhc10 Float,
+    diemtbhc4 Float,
+    diemtbtl10 Float,
+    diemtbtl4 Float,
+    sotinchidat Integer,
+    phanLoai String,
+    type Integer,
+    studentId Integer
+}
+
+// Set pagination options
+paginate Student, Score, MeanScore  with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

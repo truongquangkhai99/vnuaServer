@@ -1,0 +1,98 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="vnuaServerApp.student.home.title">Students</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-student" [routerLink]="['/student/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span class="hidden-sm-down"  jhiTranslate="vnuaServerApp.student.home.createLabel">
+            Create a new Student
+            </span>
+        </button>
+    </h2>
+    <jhi-alert-error></jhi-alert-error>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+        <div class="col-sm-12">
+            <form name="searchForm" class="form-inline">
+                <div class="input-group w-100 mt-3">
+                    <input type="text" class="form-control" [(ngModel)]="currentSearch" id="currentSearch" name="currentSearch" placeholder="{{ 'vnuaServerApp.student.home.search' | translate }}">
+                    <button class="input-group-append btn btn-info" (click)="search(currentSearch)">
+                        <fa-icon [icon]="'search'"></fa-icon>
+                    </button>
+                    <button class="input-group-append btn btn-danger" (click)="search('')" *ngIf="currentSearch">
+                        <fa-icon [icon]="'trash-alt'"></fa-icon>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br/>
+    <div class="alert alert-warning" *ngIf="students?.length === 0">
+        <span jhiTranslate="vnuaServerApp.student.home.notFound">No students found</span>
+    </div>
+    <div class="table-responsive" *ngIf="students?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="loadPage.bind(this)">
+            <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="studentID"><span jhiTranslate="vnuaServerApp.student.studentID">Student ID</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="fullname"><span jhiTranslate="vnuaServerApp.student.fullname">Fullname</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="sex"><span jhiTranslate="vnuaServerApp.student.sex">Sex</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="birthDay"><span jhiTranslate="vnuaServerApp.student.birthDay">Birth Day</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="birthPlace"><span jhiTranslate="vnuaServerApp.student.birthPlace">Birth Place</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="chuyenNganh"><span jhiTranslate="vnuaServerApp.student.chuyenNganh">Chuyen Nganh</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="lop"><span jhiTranslate="vnuaServerApp.student.lop">Lop</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="khoa"><span jhiTranslate="vnuaServerApp.student.khoa">Khoa</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="khoaHoc"><span jhiTranslate="vnuaServerApp.student.khoaHoc">Khoa Hoc</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="heDaoTao"><span jhiTranslate="vnuaServerApp.student.heDaoTao">He Dao Tao</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="coVanHocTap"><span jhiTranslate="vnuaServerApp.student.coVanHocTap">Co Van Hoc Tap</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let student of students ;trackBy: trackId">
+                <td><a [routerLink]="['/student', student.id, 'view' ]">{{student.id}}</a></td>
+                <td>{{student.studentID}}</td>
+                <td>{{student.fullname}}</td>
+                <td>{{student.sex}}</td>
+                <td>{{student.birthDay | date:'mediumDate'}}</td>
+                <td>{{student.birthPlace}}</td>
+                <td>{{student.chuyenNganh}}</td>
+                <td>{{student.lop}}</td>
+                <td>{{student.khoa}}</td>
+                <td>{{student.khoaHoc}}</td>
+                <td>{{student.heDaoTao}}</td>
+                <td>{{student.coVanHocTap}}</td>
+                <td class="text-right">
+                    <div class="btn-group">
+                        <button type="submit"
+                                [routerLink]="['/student', student.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/student', student.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit" (click)="delete(student)"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div *ngIf="students?.length > 0">
+        <div class="row justify-content-center">
+            <jhi-item-count [page]="page" [total]="totalItems" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+        </div>
+        <div class="row justify-content-center">
+            <ngb-pagination [collectionSize]="totalItems" [(page)]="ngbPaginationPage" [pageSize]="itemsPerPage" [maxSize]="5" [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage($event)"></ngb-pagination>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,102 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="vnuaServerApp.score.home.title">Scores</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-score" [routerLink]="['/score/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span class="hidden-sm-down"  jhiTranslate="vnuaServerApp.score.home.createLabel">
+            Create a new Score
+            </span>
+        </button>
+    </h2>
+    <jhi-alert-error></jhi-alert-error>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+        <div class="col-sm-12">
+            <form name="searchForm" class="form-inline">
+                <div class="input-group w-100 mt-3">
+                    <input type="text" class="form-control" [(ngModel)]="currentSearch" id="currentSearch" name="currentSearch" placeholder="{{ 'vnuaServerApp.score.home.search' | translate }}">
+                    <button class="input-group-append btn btn-info" (click)="search(currentSearch)">
+                        <fa-icon [icon]="'search'"></fa-icon>
+                    </button>
+                    <button class="input-group-append btn btn-danger" (click)="search('')" *ngIf="currentSearch">
+                        <fa-icon [icon]="'trash-alt'"></fa-icon>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br/>
+    <div class="alert alert-warning" *ngIf="scores?.length === 0">
+        <span jhiTranslate="vnuaServerApp.score.home.notFound">No scores found</span>
+    </div>
+    <div class="table-responsive" *ngIf="scores?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="loadPage.bind(this)">
+            <th scope="col"  jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="tenMon"><span jhiTranslate="vnuaServerApp.score.tenMon">Ten Mon</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="maMon"><span jhiTranslate="vnuaServerApp.score.maMon">Ma Mon</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="tc"><span jhiTranslate="vnuaServerApp.score.tc">Tc</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="ktPercent"><span jhiTranslate="vnuaServerApp.score.ktPercent">Kt Percent</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="thiPercent"><span jhiTranslate="vnuaServerApp.score.thiPercent">Thi Percent</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="diemChuyenCan"><span jhiTranslate="vnuaServerApp.score.diemChuyenCan">Diem Chuyen Can</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="diemQuaTrinh"><span jhiTranslate="vnuaServerApp.score.diemQuaTrinh">Diem Qua Trinh</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="thi10"><span jhiTranslate="vnuaServerApp.score.thi10">Thi 10</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="tk110"><span jhiTranslate="vnuaServerApp.score.tk110">Tk 110</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="tk10"><span jhiTranslate="vnuaServerApp.score.tk10">Tk 10</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="tk1ch"><span jhiTranslate="vnuaServerApp.score.tk1ch">Tk 1 Ch</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="tkch"><span jhiTranslate="vnuaServerApp.score.tkch">Tkch</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"  jhiSortBy="studentId"><span jhiTranslate="vnuaServerApp.score.studentId">Student Id</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let score of scores ;trackBy: trackId">
+                <td><a [routerLink]="['/score', score.id, 'view' ]">{{score.id}}</a></td>
+                <td>{{score.tenMon}}</td>
+                <td>{{score.maMon}}</td>
+                <td>{{score.tc}}</td>
+                <td>{{score.ktPercent}}</td>
+                <td>{{score.thiPercent}}</td>
+                <td>{{score.diemChuyenCan}}</td>
+                <td>{{score.diemQuaTrinh}}</td>
+                <td>{{score.thi10}}</td>
+                <td>{{score.tk110}}</td>
+                <td>{{score.tk10}}</td>
+                <td>{{score.tk1ch}}</td>
+                <td>{{score.tkch}}</td>
+                <td>{{score.studentId}}</td>
+                <td class="text-right">
+                    <div class="btn-group">
+                        <button type="submit"
+                                [routerLink]="['/score', score.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/score', score.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit" (click)="delete(score)"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div *ngIf="scores?.length > 0">
+        <div class="row justify-content-center">
+            <jhi-item-count [page]="page" [total]="totalItems" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+        </div>
+        <div class="row justify-content-center">
+            <ngb-pagination [collectionSize]="totalItems" [(page)]="ngbPaginationPage" [pageSize]="itemsPerPage" [maxSize]="5" [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage($event)"></ngb-pagination>
+        </div>
+    </div>
+</div>

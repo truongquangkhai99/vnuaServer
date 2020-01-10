@@ -1,0 +1,35 @@
+{
+  "vnuaServerApp": {
+    "score": {
+      "home": {
+        "title": "Scores",
+        "createLabel": "Thêm mới một Score",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Score",
+        "search": "Tìm Score",
+        "notFound": "No Scores found"
+      },
+      "created": "Một Score mới được tạo với định danh {{ param }}",
+      "updated": "Một Score cập nhật với định danh {{ param }}",
+      "deleted": "Một Score đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Score {{ id }}?"
+      },
+      "detail": {
+        "title": "Score"
+      },
+      "tenMon": "Ten Mon",
+      "maMon": "Ma Mon",
+      "tc": "Tc",
+      "ktPercent": "Kt Percent",
+      "thiPercent": "Thi Percent",
+      "diemChuyenCan": "Diem Chuyen Can",
+      "diemQuaTrinh": "Diem Qua Trinh",
+      "thi10": "Thi 10",
+      "tk110": "Tk 110",
+      "tk10": "Tk 10",
+      "tk1ch": "Tk 1 Ch",
+      "tkch": "Tkch",
+      "studentId": "Student Id"
+    }
+  }
+}

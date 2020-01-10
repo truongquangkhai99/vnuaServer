@@ -1,0 +1,83 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-student-heading" jhiTranslate="vnuaServerApp.student.home.createOrEditLabel">Create or edit a Student</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id"
+                        readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.student.studentID" for="field_studentID">Student ID</label>
+                    <input type="number" class="form-control" name="studentID" id="field_studentID"
+                           formControlName="studentID"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.student.fullname" for="field_fullname">Fullname</label>
+                    <input type="text" class="form-control" name="fullname" id="field_fullname"
+                           formControlName="fullname"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.student.sex" for="field_sex">Sex</label>
+                    <input type="text" class="form-control" name="sex" id="field_sex"
+                           formControlName="sex"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.student.birthDay" for="field_birthDay">Birth Day</label>
+                    <div class="input-group">
+                        <input id="field_birthDay" type="text" class="form-control" name="birthDay" ngbDatepicker  #birthDayDp="ngbDatepicker" formControlName="birthDay"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="birthDayDp.toggle()"><fa-icon [icon]="'calendar-alt'"></fa-icon></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.student.birthPlace" for="field_birthPlace">Birth Place</label>
+                    <input type="text" class="form-control" name="birthPlace" id="field_birthPlace"
+                           formControlName="birthPlace"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.student.chuyenNganh" for="field_chuyenNganh">Chuyen Nganh</label>
+                    <input type="text" class="form-control" name="chuyenNganh" id="field_chuyenNganh"
+                           formControlName="chuyenNganh"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.student.lop" for="field_lop">Lop</label>
+                    <input type="text" class="form-control" name="lop" id="field_lop"
+                           formControlName="lop"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.student.khoa" for="field_khoa">Khoa</label>
+                    <input type="text" class="form-control" name="khoa" id="field_khoa"
+                           formControlName="khoa"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.student.khoaHoc" for="field_khoaHoc">Khoa Hoc</label>
+                    <input type="text" class="form-control" name="khoaHoc" id="field_khoaHoc"
+                           formControlName="khoaHoc"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.student.heDaoTao" for="field_heDaoTao">He Dao Tao</label>
+                    <input type="text" class="form-control" name="heDaoTao" id="field_heDaoTao"
+                           formControlName="heDaoTao"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.student.coVanHocTap" for="field_coVanHocTap">Co Van Hoc Tap</label>
+                    <input type="text" class="form-control" name="coVanHocTap" id="field_coVanHocTap"
+                           formControlName="coVanHocTap"/>
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

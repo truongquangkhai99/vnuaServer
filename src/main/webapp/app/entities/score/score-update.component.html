@@ -1,0 +1,89 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-score-heading" jhiTranslate="vnuaServerApp.score.home.createOrEditLabel">Create or edit a Score</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id"
+                        readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.score.tenMon" for="field_tenMon">Ten Mon</label>
+                    <input type="text" class="form-control" name="tenMon" id="field_tenMon"
+                           formControlName="tenMon"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.score.maMon" for="field_maMon">Ma Mon</label>
+                    <input type="text" class="form-control" name="maMon" id="field_maMon"
+                           formControlName="maMon"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.score.tc" for="field_tc">Tc</label>
+                    <input type="number" class="form-control" name="tc" id="field_tc"
+                           formControlName="tc"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.score.ktPercent" for="field_ktPercent">Kt Percent</label>
+                    <input type="number" class="form-control" name="ktPercent" id="field_ktPercent"
+                           formControlName="ktPercent"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.score.thiPercent" for="field_thiPercent">Thi Percent</label>
+                    <input type="number" class="form-control" name="thiPercent" id="field_thiPercent"
+                           formControlName="thiPercent"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.score.diemChuyenCan" for="field_diemChuyenCan">Diem Chuyen Can</label>
+                    <input type="number" class="form-control" name="diemChuyenCan" id="field_diemChuyenCan"
+                           formControlName="diemChuyenCan"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.score.diemQuaTrinh" for="field_diemQuaTrinh">Diem Qua Trinh</label>
+                    <input type="number" class="form-control" name="diemQuaTrinh" id="field_diemQuaTrinh"
+                           formControlName="diemQuaTrinh"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.score.thi10" for="field_thi10">Thi 10</label>
+                    <input type="number" class="form-control" name="thi10" id="field_thi10"
+                           formControlName="thi10"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.score.tk110" for="field_tk110">Tk 110</label>
+                    <input type="number" class="form-control" name="tk110" id="field_tk110"
+                           formControlName="tk110"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.score.tk10" for="field_tk10">Tk 10</label>
+                    <input type="number" class="form-control" name="tk10" id="field_tk10"
+                           formControlName="tk10"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.score.tk1ch" for="field_tk1ch">Tk 1 Ch</label>
+                    <input type="text" class="form-control" name="tk1ch" id="field_tk1ch"
+                           formControlName="tk1ch"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.score.tkch" for="field_tkch">Tkch</label>
+                    <input type="text" class="form-control" name="tkch" id="field_tkch"
+                           formControlName="tkch"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.score.studentId" for="field_studentId">Student Id</label>
+                    <input type="number" class="form-control" name="studentId" id="field_studentId"
+                           formControlName="studentId"/>
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

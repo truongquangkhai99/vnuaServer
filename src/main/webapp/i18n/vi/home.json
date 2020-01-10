@@ -1,6 +1,6 @@
 {
   "home": {
-    "title": "Chào mừng bạn đến với Java Hipster!",
+    "title": "Tiện ích VNUA",
     "subtitle": "Đây là trang chủ của bạn",
     "logged": {
       "message": "Bạn đang đăng nhập bằng tài khoản \"{{username}}\"."
@@ -14,6 +14,8 @@
       "follow": "Theo dõi @jhipster trên Twitter"
     },
     "like": "Nếu bạn thích JHipster, đừng quên cho chúng tôi thêm một ngôi sao trên",
-    "github": "GitHub"
+    "github": "GitHub",
+    "search": "Tìm kiếm",
+    "searchStudentInformation": "Tìm kiếm thông tin sinh viên"
   }
 }

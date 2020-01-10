@@ -1,0 +1,33 @@
+{
+  "vnuaServerApp": {
+    "student": {
+      "home": {
+        "title": "Students",
+        "createLabel": "Thêm mới một Student",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Student",
+        "search": "Tìm Student",
+        "notFound": "No Students found"
+      },
+      "created": "Một Student mới được tạo với định danh {{ param }}",
+      "updated": "Một Student cập nhật với định danh {{ param }}",
+      "deleted": "Một Student đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Student {{ id }}?"
+      },
+      "detail": {
+        "title": "Student"
+      },
+      "studentID": "Mã SV",
+      "fullname": "Họ Tên",
+      "sex": "Giới tính",
+      "birthDay": "Ngày sinh",
+      "birthPlace": "Nơi sinh",
+      "chuyenNganh": "Chuyên ngành",
+      "lop": "Lớp",
+      "khoa": "Khoa",
+      "khoaHoc": "Khóa học",
+      "heDaoTao": "Hệ đào tạo",
+      "coVanHocTap": "CVHT"
+    }
+  }
+}

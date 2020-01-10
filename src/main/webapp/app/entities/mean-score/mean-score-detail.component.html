@@ -1,0 +1,55 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="meanScore">
+            <h2><span jhiTranslate="vnuaServerApp.meanScore.detail.title">Mean Score</span> {{meanScore.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="vnuaServerApp.meanScore.diemtbhc10">Diemtbhc 10</span></dt>
+                <dd>
+                    <span>{{meanScore.diemtbhc10}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.meanScore.diemtbhc4">Diemtbhc 4</span></dt>
+                <dd>
+                    <span>{{meanScore.diemtbhc4}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.meanScore.diemtbtl10">Diemtbtl 10</span></dt>
+                <dd>
+                    <span>{{meanScore.diemtbtl10}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.meanScore.diemtbtl4">Diemtbtl 4</span></dt>
+                <dd>
+                    <span>{{meanScore.diemtbtl4}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.meanScore.sotinchidat">Sotinchidat</span></dt>
+                <dd>
+                    <span>{{meanScore.sotinchidat}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.meanScore.phanLoai">Phan Loai</span></dt>
+                <dd>
+                    <span>{{meanScore.phanLoai}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.meanScore.type">Type</span></dt>
+                <dd>
+                    <span>{{meanScore.type}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.meanScore.studentId">Student Id</span></dt>
+                <dd>
+                    <span>{{meanScore.studentId}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/mean-score', meanScore.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

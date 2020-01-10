@@ -42,6 +42,9 @@ public class CacheConfiguration {
             createCache(cm, com.luantm.vnua.domain.User.class.getName());
             createCache(cm, com.luantm.vnua.domain.Authority.class.getName());
             createCache(cm, com.luantm.vnua.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.luantm.vnua.domain.Student.class.getName());
+            createCache(cm, com.luantm.vnua.domain.Score.class.getName());
+            createCache(cm, com.luantm.vnua.domain.MeanScore.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

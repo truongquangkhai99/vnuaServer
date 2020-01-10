@@ -1,0 +1,67 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="student">
+            <h2><span jhiTranslate="vnuaServerApp.student.detail.title">Student</span> {{student.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="vnuaServerApp.student.studentID">Student ID</span></dt>
+                <dd>
+                    <span>{{student.studentID}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.student.fullname">Fullname</span></dt>
+                <dd>
+                    <span>{{student.fullname}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.student.sex">Sex</span></dt>
+                <dd>
+                    <span>{{student.sex}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.student.birthDay">Birth Day</span></dt>
+                <dd>
+                    <span>{{student.birthDay}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.student.birthPlace">Birth Place</span></dt>
+                <dd>
+                    <span>{{student.birthPlace}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.student.chuyenNganh">Chuyen Nganh</span></dt>
+                <dd>
+                    <span>{{student.chuyenNganh}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.student.lop">Lop</span></dt>
+                <dd>
+                    <span>{{student.lop}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.student.khoa">Khoa</span></dt>
+                <dd>
+                    <span>{{student.khoa}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.student.khoaHoc">Khoa Hoc</span></dt>
+                <dd>
+                    <span>{{student.khoaHoc}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.student.heDaoTao">He Dao Tao</span></dt>
+                <dd>
+                    <span>{{student.heDaoTao}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.student.coVanHocTap">Co Van Hoc Tap</span></dt>
+                <dd>
+                    <span>{{student.coVanHocTap}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/student', student.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

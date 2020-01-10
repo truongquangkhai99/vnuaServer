@@ -1,12 +1,15 @@
 {
   "global": {
-    "title": "VnuaServer",
+    "title": "Tiện ích VNUA",
     "browsehappy": "Bạn đang sử dụng một trình duyệt <strong>quá cũ</strong>. Vui lòng <a href=\"http://browsehappy.com/?locale=en\">nâng cấp trình duyệt</a> của bạn để có trải nghiệm tốt nhất.",
     "menu": {
       "home": "Trang chủ",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Thực thể",
+        "student": "Student",
+        "score": "Score",
+        "meanScore": "Mean Score",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
@@ -133,5 +136,5 @@
       "not.image": "File was expected to be an image but was found to be \"{{ fileType }}\""
     }
   },
-  "footer": "Đây là chân trang của bạn"
+  "footer": "Được phát triển bởi BFFs LuanTM group"
 }

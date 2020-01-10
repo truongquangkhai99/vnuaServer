@@ -1,0 +1,30 @@
+{
+  "vnuaServerApp": {
+    "meanScore": {
+      "home": {
+        "title": "Mean Scores",
+        "createLabel": "Create a new Mean Score",
+        "createOrEditLabel": "Create or edit a Mean Score",
+        "search": "Search for Mean Score",
+        "notFound": "No Mean Scores found"
+      },
+      "created": "A new Mean Score is created with identifier {{ param }}",
+      "updated": "A Mean Score is updated with identifier {{ param }}",
+      "deleted": "A Mean Score is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Mean Score {{ id }}?"
+      },
+      "detail": {
+        "title": "Mean Score"
+      },
+      "diemtbhc10": "Diemtbhc 10",
+      "diemtbhc4": "Diemtbhc 4",
+      "diemtbtl10": "Diemtbtl 10",
+      "diemtbtl4": "Diemtbtl 4",
+      "sotinchidat": "Sotinchidat",
+      "phanLoai": "Phan Loai",
+      "type": "Type",
+      "studentId": "Student Id"
+    }
+  }
+}

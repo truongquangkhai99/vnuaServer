@@ -1,0 +1,64 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-mean-score-heading" jhiTranslate="vnuaServerApp.meanScore.home.createOrEditLabel">Create or edit a Mean Score</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id"
+                        readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.meanScore.diemtbhc10" for="field_diemtbhc10">Diemtbhc 10</label>
+                    <input type="number" class="form-control" name="diemtbhc10" id="field_diemtbhc10"
+                           formControlName="diemtbhc10"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.meanScore.diemtbhc4" for="field_diemtbhc4">Diemtbhc 4</label>
+                    <input type="number" class="form-control" name="diemtbhc4" id="field_diemtbhc4"
+                           formControlName="diemtbhc4"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.meanScore.diemtbtl10" for="field_diemtbtl10">Diemtbtl 10</label>
+                    <input type="number" class="form-control" name="diemtbtl10" id="field_diemtbtl10"
+                           formControlName="diemtbtl10"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.meanScore.diemtbtl4" for="field_diemtbtl4">Diemtbtl 4</label>
+                    <input type="number" class="form-control" name="diemtbtl4" id="field_diemtbtl4"
+                           formControlName="diemtbtl4"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.meanScore.sotinchidat" for="field_sotinchidat">Sotinchidat</label>
+                    <input type="number" class="form-control" name="sotinchidat" id="field_sotinchidat"
+                           formControlName="sotinchidat"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.meanScore.phanLoai" for="field_phanLoai">Phan Loai</label>
+                    <input type="text" class="form-control" name="phanLoai" id="field_phanLoai"
+                           formControlName="phanLoai"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.meanScore.type" for="field_type">Type</label>
+                    <input type="number" class="form-control" name="type" id="field_type"
+                           formControlName="type"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="vnuaServerApp.meanScore.studentId" for="field_studentId">Student Id</label>
+                    <input type="number" class="form-control" name="studentId" id="field_studentId"
+                           formControlName="studentId"/>
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

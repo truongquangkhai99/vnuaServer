@@ -1,0 +1,75 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="score">
+            <h2><span jhiTranslate="vnuaServerApp.score.detail.title">Score</span> {{score.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="vnuaServerApp.score.tenMon">Ten Mon</span></dt>
+                <dd>
+                    <span>{{score.tenMon}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.score.maMon">Ma Mon</span></dt>
+                <dd>
+                    <span>{{score.maMon}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.score.tc">Tc</span></dt>
+                <dd>
+                    <span>{{score.tc}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.score.ktPercent">Kt Percent</span></dt>
+                <dd>
+                    <span>{{score.ktPercent}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.score.thiPercent">Thi Percent</span></dt>
+                <dd>
+                    <span>{{score.thiPercent}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.score.diemChuyenCan">Diem Chuyen Can</span></dt>
+                <dd>
+                    <span>{{score.diemChuyenCan}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.score.diemQuaTrinh">Diem Qua Trinh</span></dt>
+                <dd>
+                    <span>{{score.diemQuaTrinh}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.score.thi10">Thi 10</span></dt>
+                <dd>
+                    <span>{{score.thi10}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.score.tk110">Tk 110</span></dt>
+                <dd>
+                    <span>{{score.tk110}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.score.tk10">Tk 10</span></dt>
+                <dd>
+                    <span>{{score.tk10}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.score.tk1ch">Tk 1 Ch</span></dt>
+                <dd>
+                    <span>{{score.tk1ch}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.score.tkch">Tkch</span></dt>
+                <dd>
+                    <span>{{score.tkch}}</span>
+                </dd>
+                <dt><span jhiTranslate="vnuaServerApp.score.studentId">Student Id</span></dt>
+                <dd>
+                    <span>{{score.studentId}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/score', score.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
