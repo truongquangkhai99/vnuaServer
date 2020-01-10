@@ -50,14 +50,14 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   search(): void {
-    let query = this.searchForm.value.query;
+    const query = this.searchForm.value.query;
     this.studentService.customSearch(query).subscribe(
       (res: HttpResponse<IStudent[]>) => this.onSuccess(res.body),
       () => this.onError()
     );
   }
   protected onSuccess(data: IStudent[] | null): void {
-    this.students = data;
+    this.students = data ? data : [];
   }
   protected onError(): void {
     //     console.log('test')
