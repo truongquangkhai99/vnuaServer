@@ -1,3 +1,89 @@
+<style>
+    .box{
+        padding:5px 0px;
+    }
+
+    .box-part{
+        background:#FFF;
+        border-radius:0;
+        padding: 10px 10px;
+        margin: 10px 0px;
+    }
+</style>
 <div class="footer">
-    <p jhiTranslate="footer">This is your footer</p>
+    <div class="col-md-12">
+        <div class="jumbotron" style="background: white;">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="box-part text-center">
+
+                        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                        <div class="title">
+                            <h4>Tìm kiếm thông tin sinh viên</h4>
+                        </div>
+
+                        <div class="text">
+                            <span>Tìm họ tên, mã sinh viên</span>
+                        </div>
+                        <button type="submit"
+                                [routerLink]="['']"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="home.try"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="box-part text-center">
+
+                        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                        <div class="title">
+                            <h4>Tìm kiếm thông tin giáo viên</h4>
+                        </div>
+
+                        <div class="text">
+                            <span>Tìm kiếm thông tin giáo viên</span>
+                        </div>
+                        <button type="submit"
+                                [routerLink]="['hteacher']"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="home.try"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="box-part text-center">
+
+                        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                        <div class="title">
+                            <h4>Xem điểm thi</h4>
+                        </div>
+
+                        <div class="text">
+                            <span>Xem điểm thi</span>
+                        </div>
+                        <a href="#">Đang phát triển</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="box-part text-center">
+
+                        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                        <div class="title">
+                            <h4>Thời khóa biểu</h4>
+                        </div>
+
+                        <div class="text">
+                            <span>Thời khóa biểu</span>
+                        </div>
+                        <a href="#">Đang phát triển</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div jhiTranslate="footer" style="text-align: center;">This is your footer</div>
 </div>

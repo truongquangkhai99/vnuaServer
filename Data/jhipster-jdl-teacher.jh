@@ -1,5 +1,5 @@
 entity Teacher {
-	teacherID Integer,
+	teacherID String,
     fullname String
 }
 

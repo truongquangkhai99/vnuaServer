@@ -72,7 +72,7 @@ class TeacherGatlingTest extends Simulation {
             .headers(headers_http_authenticated)
             .body(StringBody("""{
                 "id":null
-                , "teacherID":"0"
+                , "teacherID":"SAMPLE_TEXT"
                 , "fullname":"SAMPLE_TEXT"
                 }""")).asJson
             .check(status.is(201))

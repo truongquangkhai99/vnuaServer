@@ -1,9 +1,9 @@
 export interface ITeacher {
   id?: number;
-  teacherID?: number;
+  teacherID?: string;
   fullname?: string;
 }
 
 export class Teacher implements ITeacher {
-  constructor(public id?: number, public teacherID?: number, public fullname?: string) {}
+  constructor(public id?: number, public teacherID?: string, public fullname?: string) {}
 }

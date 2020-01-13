@@ -25,7 +25,7 @@ public class Teacher implements Serializable {
     private Long id;
 
     @Column(name = "teacher_id")
-    private Integer teacherID;
+    private String teacherID;
 
     @Column(name = "fullname")
     private String fullname;
@@ -39,16 +39,16 @@ public class Teacher implements Serializable {
         this.id = id;
     }
 
-    public Integer getTeacherID() {
+    public String getTeacherID() {
         return teacherID;
     }
 
-    public Teacher teacherID(Integer teacherID) {
+    public Teacher teacherID(String teacherID) {
         this.teacherID = teacherID;
         return this;
     }
 
-    public void setTeacherID(Integer teacherID) {
+    public void setTeacherID(String teacherID) {
         this.teacherID = teacherID;
     }
 
@@ -86,7 +86,7 @@ public class Teacher implements Serializable {
     public String toString() {
         return "Teacher{" +
             "id=" + getId() +
-            ", teacherID=" + getTeacherID() +
+            ", teacherID='" + getTeacherID() + "'" +
             ", fullname='" + getFullname() + "'" +
             "}";
     }

@@ -14,7 +14,7 @@ import java.util.List;
 @SuppressWarnings("unused")
 @Repository
 public interface HTeacherRepository extends JpaRepository<Teacher, Long> {
-    @Query(value = "SELECT * FROM teacher t WHERE CAST(teacher_id as text) like ?1" +
+    @Query(value = "SELECT * FROM teacher t WHERE teacher_id like ?1" +
         " OR t.fullname like ?1" +
         " ORDER BY t.fullname ASC LIMIT 100",
         nativeQuery=true)

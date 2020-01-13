@@ -20,7 +20,7 @@ describe('Service Tests', () => {
       service = injector.get(TeacherService);
       httpMock = injector.get(HttpTestingController);
 
-      elemDefault = new Teacher(0, 0, 'AAAAAAA');
+      elemDefault = new Teacher(0, 'AAAAAAA', 'AAAAAAA');
     });
 
     describe('Service methods', () => {
@@ -56,7 +56,7 @@ describe('Service Tests', () => {
       it('should update a Teacher', () => {
         const returnedFromService = Object.assign(
           {
-            teacherID: 1,
+            teacherID: 'BBBBBB',
             fullname: 'BBBBBB'
           },
           elemDefault
@@ -75,7 +75,7 @@ describe('Service Tests', () => {
       it('should return a list of Teacher', () => {
         const returnedFromService = Object.assign(
           {
-            teacherID: 1,
+            teacherID: 'BBBBBB',
             fullname: 'BBBBBB'
           },
           elemDefault

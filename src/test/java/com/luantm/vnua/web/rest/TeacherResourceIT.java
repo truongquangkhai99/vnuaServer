@@ -39,8 +39,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest(classes = VnuaServerApp.class)
 public class TeacherResourceIT {
 
-    private static final Integer DEFAULT_TEACHER_ID = 1;
-    private static final Integer UPDATED_TEACHER_ID = 2;
+    private static final String DEFAULT_TEACHER_ID = "AAAAAAAAAA";
+    private static final String UPDATED_TEACHER_ID = "BBBBBBBBBB";
 
     private static final String DEFAULT_FULLNAME = "AAAAAAAAAA";
     private static final String UPDATED_FULLNAME = "BBBBBBBBBB";
