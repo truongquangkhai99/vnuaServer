@@ -10,6 +10,7 @@
         "student": "Student",
         "score": "Score",
         "meanScore": "Mean Score",
+        "teacher": "Teacher",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

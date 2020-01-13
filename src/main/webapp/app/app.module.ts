@@ -15,12 +15,16 @@ import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
 import { ActiveMenuDirective } from './layouts/navbar/active-menu.directive';
 import { ErrorComponent } from './layouts/error/error.component';
 
+import { VnuaServerHTeacherModule } from './home/hteacher/hteacher.module';
 @NgModule({
   imports: [
     BrowserModule,
     VnuaServerSharedModule,
     VnuaServerCoreModule,
     VnuaServerHomeModule,
+
+    VnuaServerHTeacherModule,
+
     // jhipster-needle-angular-add-module JHipster will add new module here
     VnuaServerEntityModule,
     VnuaServerAppRoutingModule

@@ -1,0 +1,15 @@
+entity MeanScore {
+	diemtbhc10 Float,
+    diemtbhc4 Float,
+    diemtbtl10 Float,
+    diemtbtl4 Float,
+    sotinchidat Integer,
+    sotinchitichluy Integer,
+    phanLoai String,
+    type Integer,
+    studentId Integer
+}
+
+// Set pagination options
+paginate MeanScore  with pagination
+

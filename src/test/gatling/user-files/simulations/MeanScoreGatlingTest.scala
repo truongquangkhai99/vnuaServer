@@ -77,6 +77,7 @@ class MeanScoreGatlingTest extends Simulation {
                 , "diemtbtl10":null
                 , "diemtbtl4":null
                 , "sotinchidat":"0"
+                , "sotinchitichluy":"0"
                 , "phanLoai":"SAMPLE_TEXT"
                 , "type":"0"
                 , "studentId":"0"

@@ -17,6 +17,7 @@
     <include file="config/liquibase/changelog/20200110060827_added_entity_Student.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20200110060828_added_entity_Score.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20200110060829_added_entity_MeanScore.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200113083946_added_entity_Teacher.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

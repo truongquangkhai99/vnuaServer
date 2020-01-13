@@ -1,0 +1,13 @@
+entity Teacher {
+	teacherID Integer,
+    fullname String
+}
+
+// Set pagination options
+paginate Teacher with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

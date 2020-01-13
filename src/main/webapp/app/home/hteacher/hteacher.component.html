@@ -1,0 +1,140 @@
+<style>
+    .box{
+        padding:20px 0px;
+    }
+
+    .box-part{
+        background:#FFF;
+        border-radius:0;
+        padding:20px 10px;
+        margin:30px 0px;
+    }
+</style>
+<div class="row">
+    <div class="col-md-12">
+        <div class="col-md-12">
+
+            <p class="lead"><strong jhiTranslate="home.searchTeacherInformation"></strong></p>
+
+            <div class="col-md-4">
+                <form name="searchForm" role="form" novalidate (ngSubmit)="search()" [formGroup]="searchForm">
+                    <div>
+                        <jhi-alert-error></jhi-alert-error>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="query" id="field_query" formControlName="query" placeholder="Tên giáo viên..."/>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary float-right jh-create-entity create-score">
+                                <fa-icon [icon]="'search'"></fa-icon>
+                                <span  jhiTranslate="home.search">
+                                Tìm kiếm
+                            </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div style="margin-bottom: 10px; clear: both"></div>
+            </div>
+
+            <div class="table-responsive" *ngIf="teachers?.length > 0">
+                <table class="table table-striped" aria-describedby="page-heading">
+                    <thead>
+                    <tr>
+                        <th scope="col"><span jhiTranslate="global.field.id">ID</span></th>
+                        <th scope="col"><span jhiTranslate="vnuaServerApp.teacher.teacherID">Teacher ID</span></th>
+                        <th scope="col"><span jhiTranslate="vnuaServerApp.teacher.fullname">Fullname</span></th>
+                        <th scope="col"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let teacher of teachers ;">
+                        <td><a [routerLink]="['/teacher', teacher.id, 'view' ]">{{teacher.id}}</a></td>
+                        <td>{{teacher.teacherID}}</td>
+                        <td>{{teacher.fullname}}</td>
+                        <td class="text-right">
+                            <div class="btn-group">
+                                <button type="submit"
+                                        [routerLink]="['/teacher', teacher.id, 'view' ]"
+                                        class="btn btn-info btn-sm">
+                                    <fa-icon [icon]="'eye'"></fa-icon>
+                                    <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="jumbotron">
+            <h1 class="display-4" jhiTranslate="home.title"></h1>
+            <p class="lead">Tiện ích giúp sinh viên VNUA.</p>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="box-part text-center">
+
+                        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                        <div class="title">
+                            <h4>Tìm kiếm thông tin sinh viên</h4>
+                        </div>
+
+                        <div class="text">
+                            <span>Tìm họ tên, mã sinh viên</span>
+                        </div>
+                        <a href="#">Xem thử</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="box-part text-center">
+
+                        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                        <div class="title">
+                            <h4>Tìm kiếm thông tin giáo viên</h4>
+                        </div>
+
+                        <div class="text">
+                            <span>Tìm kiếm thông tin giáo viên</span>
+                        </div>
+                        <a href="#">Xem thử</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="box-part text-center">
+
+                        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                        <div class="title">
+                            <h4>Xem điểm thi</h4>
+                        </div>
+
+                        <div class="text">
+                            <span>Xem điểm thi</span>
+                        </div>
+                        <a href="#">Xem thử</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="box-part text-center">
+
+                        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                        <div class="title">
+                            <h4>Thời khóa biểu</h4>
+                        </div>
+
+                        <div class="text">
+                            <span>Thời khóa biểu</span>
+                        </div>
+                        <a href="#">Xem thử</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

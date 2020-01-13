@@ -1,0 +1,638 @@
+
+anh01,Phạm Thanh Tâm
+bcy01,Hà Viết Cường
+bcy02,Đỗ Tấn Dũng
+bcy03,Nguyễn Đức Huy
+bcy04,Ngô Thị Bích Hảo
+bcy05,Nguyễn Thị Lan Hương
+bkt01,Phí Thị Diễm Hồng
+bkt02,Nguyễn Đăng Học
+bkt03,Trần Nguyễn Thị Yến
+bkt04,Nguyễn Thị Tâm
+bkt05,Trần Thị Hải Phương
+bly01,Nguyễn Thị Lan
+bly02,Nguyễn Hữu Nam
+bly03,Bùi Trần Anh Đào
+bly04,Bùi Thị Tố Nga
+bly05,Trần Minh Hải
+bly06,Nguyễn Vũ Sơn
+bts01,Lê Việt Dũng
+bts02,Đoàn Văn Hiến
+bty01,Nguyễn Văn Hải
+bty02,Trần Văn Nên
+bty03,Đinh Phương Nam
+bty04,Giang Hoàng Hà
+ccn01,Đinh Thái Hoàng
+ccn02,Vũ Đình Chính
+ccn03,Nguyễn Thị Thanh Hải
+ccn04,Vũ Ngọc Thắng
+cnk01,Lê Văn Ban
+cnk02,Lê Hữu Hiếu
+cnp01,Đặng Xuân Hà
+cnp02,Ngô Công Thắng
+cnp03,Đỗ Thị Nhâm
+cnp04,Đào Trọng Thắng
+cnp05,Phan Trọng Tiến
+cnp06,Dương Xuân Thành
+cnp07,Hoàng Thị Hà
+cnp08,Phạm Thủy Vân
+cnp09,Trần Trung Hiếu
+cnp10,Phạm Thị Thái Ninh
+cnp11,Lê Thị Minh Thùy
+cnp12,Lê Thị Nhung
+cnp13,Đinh Xuân Pháp
+cnp14,Nguyễn Doãn Đông
+cns01,Nguyễn Mạnh Khải
+cns02,Vũ Thị Kim Oanh
+cns03,Nguyễn Thị Bích Thủy
+cns04,Nguyễn Thị Hạnh
+cns05,Hà Hải Yến
+cns06,Nguyễn Thị Thu Nga
+cns07,Nguyễn Trọng Thăng
+cns08,Hoàng Thị Minh Nguyệt
+cod01,Đồng Văn Hiếu
+cod02,Phạm Hồng Ngân
+cod03,Vũ Thị Thu Trà
+cod04,Vũ Kim Hoa
+cod05,Nguyễn Thị Trang
+cod06,Hoàng Minh Đức
+cod07,Nguyễn Thị Hương Giang
+cod08,Dương Văn Nhiệm
+cod09,Cam Thị Thu Hà
+cod10,Nguyễn Thu Thủy
+cth01,Hà Thị Thanh Bình
+cth02,Nguyễn Tất Cảnh
+cth03,Trần Thị Thiêm
+cth04,Nguyễn Ích Tân
+cth05,Nguyễn Xuân Mai
+cth06,Nguyễn Viết Hùng
+cth07,Chu Anh Tiệp
+cth08,Thiều Thị Phong Thu
+cth09,Vũ Duy Hoàng
+cth10,Nguyễn Mai Thơm
+cth11,Nguyễn Thị Loan
+ctt01,Ngạc An Bang
+ctt02,Nguyễn Văn Đậu
+ctt03,Lê Kim Long
+ctt04,Nguyễn Ngọc Lan
+ctt05,Nguyễn Hùng Huy
+ctt06,Đặng Thị Ngọc Lan
+ctu01,Trần Đình Chiến
+ctu02,Đặng Thị Dung
+ctu03,Nguyễn Đức Khánh
+ctu04,Nguyễn Minh Mầu
+ctu05,Nguyễn Thị Kim Oanh
+ctu06,Hồ Thu Giang
+ctu07,Nguyễn Văn Đĩnh
+ctu08,Nguyễn Đức Tùng
+ctu09,Phạm Hồng Thái
+ctu10,Phạm Thị Hiếu
+ctu11,Lê Ngọc Anh
+ctu12,Lê Xuân Thiện
+ctu13,Thân Thế Anh
+cvs01,Nguyễn Thành Trung
+cvs02,Nguyễn Văn Giang
+cvs03,Nguyễn Thanh Huyền
+cvs04,Đặng Xuân Nghiêm
+cvs05,Trần Đông Anh
+cvs06,Nguyễn Xuân Cảnh
+cvs07,Phan Trọng Nhật
+cvs08,Nguyễn Thị Thanh Dung
+cvs09,Trần Thị Hồng Hạnh
+cvs10,Nguyễn Thị Minh Việt
+cvs11,Ngô Xuân Nghiễn
+cvs12,Nguyễn Thị Bích Thùy
+dcm01,Lê Văn Thai
+dcm02,Tạ Quang Giảng
+dcm03,Trần Khánh Dư
+dcm04,Vũ Thị Thu Hà
+dcm05,Vũ Hải Hà
+dcm06,Hà Thị Hồng Yến
+dcm07,Lê Thị Dung
+dlu01,Nguyễn Thị Chắc
+dlu02,Hàn Trung Dũng
+dlu03,Trương Thị Toàn
+dlu04,Bùi Hải Triều
+dlu05,Nguyễn Ngọc Quế
+dlu06,Nông Văn Vìn
+dlu07,Đặng Tiến Hòa
+dlu08,Bùi Việt Đức
+dlu09,Chu Tất Thắng
+dlu10,Dương Mạnh Đức
+dlu11,Đặng Ngọc Danh
+dlu12,Lê Anh Sơn
+dlu13,Hoàng Thanh Xuân
+dlu14,Nông Văn Nam
+dlu15,Nguyễn Trọng Minh
+dlu16,Đỗ Trung Thực
+drn01,Hoàng Văn Sơn
+drn02,Phan Việt Đông
+drn03,Nguyễn Thu Thủy
+dta01,Bùi Văn Định
+dta02,Tôn Thất Sơn
+dta03,Lê Việt Phương
+dta04,Nguyễn Bách Việt
+dta05,Nguyễn T Tuyết Lê
+dta06,Đặng Thúy Nhung
+dta07,Bùi Quang Tuấn
+dta08,Nguyễn Thị Huyền
+dta09,Tôn Nữ Mai Anh
+dtc01,Vũ Văn Liết
+dtc02,Vũ Thị Thu Hiền
+dtc03,Trần Thiện Long
+dtc04,Nguyễn Hồng Minh
+dtc05,Lê Thị Tuyết Châm
+dtc06,Vũ Đình Hòa
+dtc07,Nguyễn Thanh Tuấn
+dtc08,Ngô Thị Hồng Tươi
+dtc09,Vũ Thị Thúy Hằng
+dtc10,Phạm Thị Ngọc
+dtc11,Nguyễn Văn Cương
+dtc12,Nguyễn Tuấn Anh
+dtc13,Trần Văn Quang
+dtc14,Đoàn Thu Thủy
+dtg01,Đặng Vũ Bình
+dtg02,Đinh Văn Chỉnh
+dtg03,Vũ Thị Thơm
+dtg04,Phan Xuân Hảo
+dtg05,Hà Xuân Bộ
+dtg06,Chu Tuấn Thịnh
+dtg07,Đỗ Đức Lực
+dtg08,Nguyễn Chí Thành
+dtg09,Nguyễn Hoàng Thịnh
+dtg10,Đỗ Thị Huế
+dts01,Võ Quý Hoan
+dts02,Trần Thị Nắng Thu
+dts03,Phạm T Lam Hồng
+dts04,Nguyễn Thị Hậu
+gdt01,Nguyễn Văn Quảng
+gdt02,Hoàng Văn Hưng
+gdt03,Đặng Đức Hoàn
+gdt04,Hoàng Đức Vĩnh
+gdt05,Đỗ Mộng Ngọc
+gdt06,Nguyễn Thị The
+gdt07,Nguyễn Đăng Thiện
+gdt08,Nguyễn Xuân Cừ
+gdt09,Trần Văn Tác
+gdt10,Phan Thị Điều
+gdt11,Cao Hùng Dũng
+gdt12,Lê Thị Kim Lan
+gdt13,Trần Văn Hậu
+gdt14,Nguyễn Văn Toản
+gdt15,Lương Thanh Hoa
+gdt16,Đào Quang Trung
+gdt17,Đỗ Thành Trung
+gdt18,Nguyễn Thế Hãnh
+gtc01,Trần Thị Đức Tám
+gtc02,Nguyễn Bá Tiếp
+gtc03,Hoàng Minh Sơn
+hoa01,Đoàn Thị Thúy Ái
+hoa02,Nguyễn Thị Hồng Hạnh
+hoa03,Nguyễn Bá Bình
+hoa04,Phạm Trung Đức
+hoa05,Nguyễn Thị Chắc
+hoa06,Võ Văn Cầu
+hoa07,Lê Thị Thu Hương
+hoa08,Đinh Văn Hùng
+hoa09,Nguyễn Thị Hồng Linh
+hoa10,Trương Thị My
+hoa11,Phạm Ngọc Thụy
+hoa12,Nguyễn Ngọc Kiên
+hoa13,Phan Trung Quý
+hoa14,Bùi Thế Vĩnh
+hoa15,Dương Văn Đảm
+hoa16,Nguyễn Trường Sơn
+hoa17,Trần Thanh Hải
+hoa18,Hán Thị Phương Nga
+hoa19,Lê Kim Long
+hoa20,Bùi Thị Thu Trang
+hoa21,Nguyễn Thị Hiển
+hoa22,Nghiêm Thị Hoa
+hoa23,Đặng Hải Sơn
+hoa24,Hoàng Hiệp
+hoa25,Vũ Thị Huyền
+hoa26,Ngô Thị Thương
+hoa27,Chu Thị Thanh
+hoa28,Lê Thị Mai Linh
+hsc01,Nguyễn Văn Lâm
+hsd01,Đặng Thái Hải
+hsd02,Nguyễn Văn Kiệm
+hsd03,Ngô Thị Thùy
+hsd04,Bùi Huy Doanh
+hsd05,Nguyễn Thị Hòa Bình
+hsd06,Đinh Thị Yên
+htd01,Nguyễn Thị Huyền Thanh
+htd02,Phạm Thị Lan Hương
+htd03,Nguyễn Ngọc Kính
+htd04,Phan Văn Thắng
+htd05,Vũ Hải Thuận
+htd06,Nguyễn Công Hiền
+htd07,Nguyễn Xuân Hiếu
+htd08,Nguyễn Thị Duyên
+htd09,Nguyễn Xuân Trường
+htd10,Đào Xuân Tiến
+htn01,Phan Thị Thủy
+htn02,Nguyễn Thị Ái Nghĩa
+htn03,Đoàn Thị Hằng
+htn04,Trần Thị Ngọc
+htn05,Nguyễn Huy Trí
+htn06,Nguyễn Thị Lan
+htn07,Phạm Tiến Dũng
+htn08,Đỗ Thị Hường
+htn09,Nguyễn Hồng Hạnh
+htn10,Nguyễn Thị Ngọc Dinh
+kdt01,Trần Đình Thao
+kdt02,Nguyễn Hữu Ngoan
+kdt03,Đỗ Trường Lâm
+kdt04,Tô Thế Nguyên
+kdt05,Hồ Ngọc Ninh
+kdt06,Trần Hương Giang
+kdt07,Nguyễn Thị Minh Thu
+kdt08,Nguyễn Tuấn Sơn
+kdt09,Vũ Thị Thu Hương
+keq01,Bùi Thị Mai Linh
+keq02,Lê Thanh Hà
+keq03,Nguyễn Thị Thùy Dung
+keq04,Bùi Bằng Đoàn
+keq05,Ngô Thu Hằng
+keq06,Lại Phương Thảo
+keq07,Đỗ Quang Giám
+keq08,Trần Quang Trung
+keq09,Lê Thị Kim Sơn
+keq10,Vũ Thị Hải
+khd01,Trần Văn Chính
+khd02,Đỗ Nguyên Hải
+khd03,Luyện Hữu Cử
+kls01,Ngô Đăng Huỳnh
+kls02,Phạm Thanh Cường
+kls03,Phạm Thị Hằng
+kls04,Nguyễn Khắc Thông
+knn01,Nguyễn Viết Đăng
+knn02,Nguyễn Các Mác
+knn03,Phạm Thị Thanh Thúy
+knn04,Nguyễn Thanh Phong
+knn05,Phạm Bảo Dương
+knn06,Hà Thị Thanh Mai
+knn07,Trần Thị Như Ngọc
+knn08,Đặng Xuân Phi
+ktl01,Nguyễn Thị Thu Huyền
+ktm01,Nguyễn Hữu Giáp
+ktm02,Hồ Ngọc Cường
+ktm03,Vi Văn Năng
+ktm04,Nguyễn Văn Song
+ktm05,Vũ Thị Phương Thụy
+ktm06,Nguyễn Mậu Dũng
+ktm07,Phạm Thanh Lan
+ktm08,Đỗ Thị Diệp
+ktm09,Trần Thị Thu Trang
+ktm10,Nguyễn Thị Ngọc Thương
+ktm11,Lê Phương Nam
+ktm12,Đỗ Thị Nâng
+ktm13,Đỗ Thanh Thư
+ktm14,Nguyễn Thị Hải Ninh
+ktm15,Hoàng Thị Hằng
+ktm16,Nguyễn Mạnh Hiếu
+ktm17,Ngô Văn Hoàng
+mkt01,Nguyễn Anh Trụ
+mkt02,Trần Thị Thu Phương
+mkt03,Đặng Văn Tiến
+mkt04,Nguyễn Huy Cường
+mkt05,Trần Hữu Cường
+mkt06,Trần Thị Thu Hương
+mkt07,Chu Thị Kim Loan
+mkt08,Dương Thị Hoa
+mkt09,Nguyễn Văn Phương
+mkt10,Nguyễn Thị Trang Nhung
+mkt11,Nguyễn Hùng Anh
+mkt12,Đặng Thị Kim Hoa
+mkt13,Bùi Hồng Quý
+mkt14,Trần Thị Hạnh
+mkt15,Đỗ Thị Mỹ Hạnh
+mkt16,Nguyễn Văn Hướng
+mkt17,Nguyễn Trọng Tuynh
+mkt18,Đỗ Thị Tuyết Mai
+mkt19,Vũ Thị Hằng Nga
+mkt20,Nguyễn Thái Tùng
+mnn01,Lê Văn Bích
+mnn02,Hoàng Đức Liên
+mnn03,Nguyễn Viết Lầu
+mnn04,Đặng T Việt Hoa
+mnn05,Hà Đức Thái
+mnn06,Nguyễn Văn Muốn
+mnn07,Lương Thị Minh Châu
+mnn08,Đỗ Đình Thi
+mnn09,Lê Văn Dũng
+mnn10,Lưu Văn Chiến
+mnn11,Lê Vũ Quân
+moi01,Nguyễn Mộng Kiều
+moi02,Hoàng Văn Bắc
+moi03,Hồ Ngọc Châu
+moi04,Nguyễn Trọng Bản
+moi05,Văn Tất Tuyên
+moi06,Lương Đức Phẩm
+moi07,Nguyễn Quang Thạch
+moi08,Nguyễn Đình Nhung
+moi09,Bùi Thị Nụ
+moi10,Ngô Thị Thục
+moi11,Vũ Kim Thành
+moi12,Phạm Thị Minh Trường
+moi13,Phạm Thị Xuân Vân
+moi14,Trần Thị Hiền
+moi15,Phùng Đăng Chinh
+moi16,Phạm Văn Phê
+moi17,Hoàng Văn Mùa
+moi18,Nguyễn Văn Long
+moi19,Phạm Chí Thành
+moi20,Lê Thị Ngọc Diệp
+moi21,Hán Quang Hạnh
+moi22,Phạm Thị Mỹ Dung
+moi23,Đỗ Văn Công
+moi24,Nguyễn Văn Sắc
+moi25,Nguyễn Bắc Tuấn
+moi26,Vũ Thị Tám
+moi27,Phạm Xuân Vượng
+moi28,Nguyễn Trọng Tuyển
+moi29,Vũ Thị Thư
+moi30,Hoàng Ngọc Bích
+moi31,Nguyễn Nguyên Cự
+moi32,Bùi Thị Gia
+moi33,Nguyễn Thị Bình Tâm
+mti01,Trần Thị Thu Huyền
+mti02,Nguyễn Thị Thủy
+mti03,Ngô Tuấn Anh
+mti04,Phan Thị Thu Hồng
+mti05,Phạm Quang Dũng
+mti06,Phạm Thúy Minh
+mti07,Đoàn Thị Thu Hà
+mti08,Trần Vũ Hà
+mti09,Trần Huy Thắng
+mti10,Nguyễn Thị Huyền
+mti11,Nguyễn Văn Hoàng
+mti12,Vũ Thị Lưu
+mti13,Nguyễn Thị Thảo
+mti14,Nguyễn Đức Thịnh
+mti15,Phạm Thị Lan Anh
+nch01,Nguyễn Thị Hằng
+nch02,Đàm Văn Phải
+nch03,Đào Công Duẩn
+nch04,Chu Đức Thắng
+nch05,Phạm Ngọc Thạch
+nch06,Phạm Thị Lan Hương
+nch07,Nguyễn Thị Thanh Hà
+nch08,Bùi Thị Tho
+nch09,Nguyễn Mạnh Tường
+nch10,Nguyễn Thành Trung
+nch11,Nguyễn Văn Minh
+ngs01,Trần Tiến Dũng
+ngs02,Nguyễn Đức Trường
+ngs03,Vũ Như Quán
+ngs04,Nguyễn Hoài Nam
+ngs05,Nguyễn Văn Thắng
+ngs06,Dương Đình Long
+ngs07,Nguyễn Thị Mai Thơ
+ngs08,Hoàng Sơn
+ngs09,Nguyễn Văn Thanh
+ngs10,Sử Thanh Long
+ngs11,Đỗ Thị Kim Lành
+ngs12,Nguyễn Công Toản
+ngs13,Bùi Văn Dũng
+nho01,Nguyễn Như Hà
+nng01,Đỗ Thị Quỳnh Chi
+phl01,Nguyễn Thị Minh Hạnh
+phl02,Trịnh Thị Ngọc Anh
+phl03,Lê Thị Yến
+phl04,Lê Thị Thu Hằng
+phl05,Nguyễn Thị Ngân
+phl06,Vũ Văn Tuấn
+phl07,Nguyễn Thị Thủy
+ppg01,Nguyễn Công Ước
+ppg02,Nguyễn Thị Ngọc Thúy
+ppg03,Nguyễn Tất Thắng
+ppg04,Nguyễn Thị Thanh Hiền
+ppg05,Bùi Thị Hải Yến
+ppg06,Lê Thị Kim Thư
+ptn01,Mai Thanh Cúc
+ptn02,Vũ Thị Đào
+ptn03,Bạch Văn Thủy
+ptn04,Nguyễn Thị Tuyết Lan
+ptn05,Nguyễn Trọng Đắc
+ptn06,Nguyễn Thị Minh Hiền
+ptn07,Mai Lan Phương
+ptn08,Đỗ Thị Thanh Huyền
+ptn09,Nguyễn Minh Đức
+ptn10,Trần Mạnh Hải
+ptn11,Đỗ Thị Nhài
+ptn12,Nguyễn Thị Phương
+qdd01,Nguyễn Thị Thu Hương
+qdd02,Bùi Nguyên Hạnh
+qdd03,Nguyễn Thanh Trà
+qdd04,Hoàng Văn Đức
+qdd05,Đỗ Thị Đức Hạnh
+qdd06,Nguyễn Văn Quân
+qdd07,Bùi Lê Vinh
+qdd08,Ngô Thị Hà
+qdd09,Phan Thị Thanh Huyền
+qdd10,Phạm Phương Nam
+qdd11,Vũ Thanh Biển
+qdd12,Hồ Thị Lam Trà
+qhd01,Nguyễn Quang Học
+qhd02,Nguyễn Thị Vòng
+qhd03,Đỗ Văn Nhạ
+qhd04,Đỗ Thị Tám
+qhd05,Nguyễn Tuấn Anh
+qhd06,Quyền Thị Lan Phương
+qhd07,Nguyễn Khắc Việt Ba
+qhd08,Vũ Thị Thu
+qhd09,Nguyễn Quang Huy
+qmt01,Nguyễn Thị Hồng Ngọc
+qmt02,Cao Trường Sơn
+qmt03,Võ Hữu Công
+qmt04,Lương Đức Anh
+qmt05,Đinh Thị Hải Vân
+qmt06,Nguyễn Thị Bích Hà
+qtp01,Nguyễn Thị Thanh Thủy
+qtp02,Lê Minh Nguyệt
+qtp03,Phan Thị Phương Thảo
+qtp04,Ngô Xuân Dũng
+qtp05,Nguyễn Vĩnh Hoàng
+raq01,Hồ Hữu An
+raq02,Phạm Văn Côn
+raq03,Vũ Thanh Hải
+raq04,Trịnh Thị Mai Dung
+raq05,Đoàn Văn Lư
+raq06,Phạm Thị Minh Phượng
+raq07,Vũ Quỳnh Hoa
+raq08,Trần Thị Minh Hằng
+raq09,Phạm Thị Hương
+raq10,Nguyễn Anh Đức
+raq11,Bùi Ngọc Tấn
+raq12,Lê Thị Thẩm
+raq13,Phạm Thị Bích Phương
+raq14,Nguyễn Thị Phượng
+sdv01,Nguyễn Tố Loan
+sdv02,Ngô Thu Hà
+sdv03,Nguyễn Hữu Đức
+sdv04,Trần Thị Bình Nguyên
+sly01,Nguyễn Văn Phú
+sly02,Vũ Quang Sáng
+sly03,Nguyễn Thị Kim Thanh
+sly04,Trần Anh Tuấn
+sly05,Vũ Ngọc Lan
+sly06,Phạm Tuấn Anh
+sly07,Dương Huyền Trang
+sly08,Nguyễn Thị Phương Dung
+sly09,Vũ Tiến Bình
+stn01,Trần Đức Viên
+stn02,Phan Thị Hải Luyến
+stn03,Phan Thị Thúy
+stn04,Nguyễn Thị P Mai
+stn05,Trần Đức Hạnh
+stn06,Đoàn Văn Điếm
+stn07,Nguyễn Thị Bích Yên
+stn08,Phạm Văn Hội
+stn09,Mai Văn Thành
+stn10,Nguyễn Tuyết Lan
+stn11,Dương Thị Huyền
+stn12,Tống Văn Hoàng
+stn13,Nguyễn Thu Thùy
+stn14,Nguyễn Xuân Xanh
+stn15,Nguyễn Đình Thi
+stn16,Trần Thanh Vân
+stn17,Ngô Thế Ân
+stn18,Nguyễn Thị Thu Hà
+stn19,Trần Nguyên Bằng
+stn20,Nông Hữu Dương
+stv01,Đặng Thị Thanh Tâm
+stv02,Nguyễn Thị Thùy Linh
+stv03,Nguyễn Thị Lý Anh
+stv04,Nguyễn T Phương Thảo
+stv05,Nguyễn Quang Hạnh
+stv06,Nguyễn Thị Lâm Hải
+stv07,Trịnh Tam Kiệt
+stv08,Ninh Thị Thảo
+stv09,Nông Thị Huệ
+stv10,Nguyễn Thanh Hải
+tbd01,Nguyễn Khắc Thời
+tbd02,Nguyễn Thị Thu Hiền
+tbd03,Trần Trọng Phương
+tbd04,Nguyễn Thị Khánh
+tbd05,Phan Văn Khuê
+tbd06,Nguyễn Khắc Năng
+tbd07,Nguyễn Đức Lộc
+tbd08,Nguyễn Đình Trung
+tbd09,Phan Thành Nội
+tbi01,Trần Như Khuyên
+tbi02,Nguyễn Thanh Hải
+tbi03,Nguyễn Thị Thanh Loan
+tbi04,Ngô Thị Hiền
+tbi05,Hoàng Xuân Anh
+tch01,Nguyễn Kiều Diễm
+tch02,Kim Thị Dung
+tch03,Lê Hữu Ảnh
+tch04,Nguyễn Quốc Oánh
+tch05,Nguyễn Duy Linh
+tch06,Lê Thị Thanh Hảo
+tch07,Nguyễn Đăng Tùng
+tch08,Bùi Thị Lâm
+tch09,Nguyễn Thị Hương
+tch10,Hoàng Sĩ Thính
+tch11,Nguyễn Thị Hoàng Giang
+tch12,Trần Trọng Nam
+tch13,Đào Thị Hoàng Anh
+tch14,Đặng Thị Hải Yến
+tch15,Bùi Thị Hồng Nhung
+tdh01,Ngô Trí Dương
+tdh02,Nguyễn Thái Học
+tdh03,Nguyễn Văn Linh
+tdh04,Nguyễn Kim Dung
+tdh05,Đặng Thị Thúy Huyền
+tdh06,Lại Văn Song
+tdh07,Bùi Quốc Huy
+tdh08,Nguyễn Thị Hoài Sơn
+tdh09,Nguyễn Văn Điều
+tht01,Đỗ Thế Bảo
+tht02,Phạm Thị Hằng
+tht03,Cao Thị Ngọc Mậu
+tht04,Phạm Thị Kim Phú
+tnn01,Nguyễn Văn Dung
+tnn02,Ngô Thanh Sơn
+tnn03,Nguyễn Thị Giang
+tnn04,Phạm Ngọc Dũng
+tnn05,Ngô Thị Dung
+tnn06,Nguyễn Duy Bình
+tnn07,Nguyễn Anh Tuấn
+tnn08,Nguyễn Thị Xuyến
+tnn09,Hoàng Thái Đại
+tnn10,Vũ Thị Xuân
+toa01,Nguyễn Hữu Báu
+toa02,Nguyễn Văn Hạnh
+toa03,Nguyễn Thị Kim Bình
+toa04,Vũ Thu Giang
+toa05,Phạm Việt Nga
+toa06,Phan Quang Sáng
+toa07,Lê Thị Diệu Thùy
+tot01,Nguyễn Văn Định
+tot02,Nguyễn Hải Thanh
+tot03,Nguyễn Hoàng Huy
+tot04,Trần Đức Quỳnh
+tot05,Hoàng Thị Thanh Giang
+tot06,Phạm Hạ Thủy
+tot07,Nguyễn Trọng Kương
+tot08,Nguyễn Xuân Thảo
+tot09,Ngọc Minh Châu
+tot10,Nguyễn Thị Lan
+tot11,Nguyễn Thị Thúy Hạnh
+tpd01,Trần Thị Lan Hương
+tpd02,Trần Thị Nhung
+ttd01,Trần Quốc Vinh
+ttd02,Đoàn Thanh Thủy
+ttd03,Nguyễn Đình Công
+ttd04,Lê Thị Giang
+ttd05,Phạm Quý Giang
+ttd06,Phạm Văn Vân
+ttd07,Nguyễn Đức Thuận
+ttd08,Đỗ Thị Loan
+ttd09,Nguyễn Thị Cẩm Hà
+tth01,Nguyễn Văn Yến
+tth02,Trần Lê Thanh
+tth03,Hoàng Văn Bình
+tth04,Nguyễn Đắc Dũng
+tth05,Trần Thị Mai
+tth06,Trương Thị Thu Hạnh
+tth07,Lường Thị Phượng
+vcd01,Viện Cơ Điện
+vcd02,Nguyễn Bắc Tuấn
+vcd03,Nguyễn Thị Châu
+vcd04,Kiều Văn Viên
+vly01,Đỗ Đăng Bẩy
+vly02,Nguyễn Thị Phương
+vly03,Đoàn Văn Cán
+vly04,Nguyễn Thị Thủy
+vly05,Hồ Thị Hồng Lan
+vly06,Vũ Thị Thu
+vly07,Trần Đình Đông
+vly08,Bùi Thị Thu
+vly09,Nguyễn Tiến Hiển
+vly10,Lương Minh Quân
+vly11,Lê Văn Dũng
+vly12,Đào Hải Yến
+vly13,Bùi Đức Hiệu
+vly14,Nguyễn Thị Thanh
+vly15,Lê Phương Thảo
+vsv01,Nguyễn Xuân Thành
+vsv02,Nguyễn Thị Minh
+vsv03,Vũ Thị Hoàn
+vsv04,Đinh Hồng Duyên
+vsv05,Nguyễn Thế Bình
+vsv06,Vũ Thị Xuân Hương
+vsv07,Nguyễn Thị Khánh Huyền
+vsv08,Lê Thị Hồng Xuân
+vsv09,Nguyễn Tú Điệp
+vsv10,Nguyễn Xuân Hòa
+xhh01,Ngô Trung Thành
+xhh02,Nguyễn Thị Diễn
+xhh03,Nguyễn Thị Thu Hà
+xhh04,Nguyễn Thị Lập Thu
+xhh05,Nguyễn Minh Khuê
+xhh06,Trần Thanh Hương
+xhh07,Phạm Thị Thu Hà

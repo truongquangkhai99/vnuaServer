@@ -30,6 +30,9 @@
             <column name="sotinchidat" type="integer">
                 <constraints nullable="true" />
             </column>
+            <column name="sotinchitichluy" type="integer">
+                <constraints nullable="true" />
+            </column>
             <column name="phan_loai" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
@@ -67,6 +70,7 @@
             <column name="diemtbtl_10" type="numeric"/>
             <column name="diemtbtl_4" type="numeric"/>
             <column name="sotinchidat" type="numeric"/>
+            <column name="sotinchitichluy" type="numeric"/>
             <column name="phan_loai" type="string"/>
             <column name="type" type="numeric"/>
             <column name="student_id" type="numeric"/>

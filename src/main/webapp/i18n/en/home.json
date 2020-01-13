@@ -16,6 +16,7 @@
     "like": "If you like JHipster, don't forget to give us a star on",
     "github": "GitHub",
     "search": "Search",
-    "searchStudentInformation": "Search student Information"
+    "searchStudentInformation": "Search Student Information",
+    "searchTeacherInformation": "Search Teacher Information"
   }
 }

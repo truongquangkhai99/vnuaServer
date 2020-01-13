@@ -22,6 +22,7 @@ export class MeanScoreUpdateComponent implements OnInit {
     diemtbtl10: [],
     diemtbtl4: [],
     sotinchidat: [],
+    sotinchitichluy: [],
     phanLoai: [],
     type: [],
     studentId: []
@@ -43,6 +44,7 @@ export class MeanScoreUpdateComponent implements OnInit {
       diemtbtl10: meanScore.diemtbtl10,
       diemtbtl4: meanScore.diemtbtl4,
       sotinchidat: meanScore.sotinchidat,
+      sotinchitichluy: meanScore.sotinchitichluy,
       phanLoai: meanScore.phanLoai,
       type: meanScore.type,
       studentId: meanScore.studentId
@@ -72,6 +74,7 @@ export class MeanScoreUpdateComponent implements OnInit {
       diemtbtl10: this.editForm.get(['diemtbtl10'])!.value,
       diemtbtl4: this.editForm.get(['diemtbtl4'])!.value,
       sotinchidat: this.editForm.get(['sotinchidat'])!.value,
+      sotinchitichluy: this.editForm.get(['sotinchitichluy'])!.value,
       phanLoai: this.editForm.get(['phanLoai'])!.value,
       type: this.editForm.get(['type'])!.value,
       studentId: this.editForm.get(['studentId'])!.value

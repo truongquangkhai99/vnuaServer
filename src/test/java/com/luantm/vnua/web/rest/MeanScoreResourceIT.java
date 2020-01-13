@@ -54,6 +54,9 @@ public class MeanScoreResourceIT {
     private static final Integer DEFAULT_SOTINCHIDAT = 1;
     private static final Integer UPDATED_SOTINCHIDAT = 2;
 
+    private static final Integer DEFAULT_SOTINCHITICHLUY = 1;
+    private static final Integer UPDATED_SOTINCHITICHLUY = 2;
+
     private static final String DEFAULT_PHAN_LOAI = "AAAAAAAAAA";
     private static final String UPDATED_PHAN_LOAI = "BBBBBBBBBB";
 
@@ -118,6 +121,7 @@ public class MeanScoreResourceIT {
             .diemtbtl10(DEFAULT_DIEMTBTL_10)
             .diemtbtl4(DEFAULT_DIEMTBTL_4)
             .sotinchidat(DEFAULT_SOTINCHIDAT)
+            .sotinchitichluy(DEFAULT_SOTINCHITICHLUY)
             .phanLoai(DEFAULT_PHAN_LOAI)
             .type(DEFAULT_TYPE)
             .studentId(DEFAULT_STUDENT_ID);
@@ -136,6 +140,7 @@ public class MeanScoreResourceIT {
             .diemtbtl10(UPDATED_DIEMTBTL_10)
             .diemtbtl4(UPDATED_DIEMTBTL_4)
             .sotinchidat(UPDATED_SOTINCHIDAT)
+            .sotinchitichluy(UPDATED_SOTINCHITICHLUY)
             .phanLoai(UPDATED_PHAN_LOAI)
             .type(UPDATED_TYPE)
             .studentId(UPDATED_STUDENT_ID);
@@ -167,6 +172,7 @@ public class MeanScoreResourceIT {
         assertThat(testMeanScore.getDiemtbtl10()).isEqualTo(DEFAULT_DIEMTBTL_10);
         assertThat(testMeanScore.getDiemtbtl4()).isEqualTo(DEFAULT_DIEMTBTL_4);
         assertThat(testMeanScore.getSotinchidat()).isEqualTo(DEFAULT_SOTINCHIDAT);
+        assertThat(testMeanScore.getSotinchitichluy()).isEqualTo(DEFAULT_SOTINCHITICHLUY);
         assertThat(testMeanScore.getPhanLoai()).isEqualTo(DEFAULT_PHAN_LOAI);
         assertThat(testMeanScore.getType()).isEqualTo(DEFAULT_TYPE);
         assertThat(testMeanScore.getStudentId()).isEqualTo(DEFAULT_STUDENT_ID);
@@ -214,6 +220,7 @@ public class MeanScoreResourceIT {
             .andExpect(jsonPath("$.[*].diemtbtl10").value(hasItem(DEFAULT_DIEMTBTL_10.doubleValue())))
             .andExpect(jsonPath("$.[*].diemtbtl4").value(hasItem(DEFAULT_DIEMTBTL_4.doubleValue())))
             .andExpect(jsonPath("$.[*].sotinchidat").value(hasItem(DEFAULT_SOTINCHIDAT)))
+            .andExpect(jsonPath("$.[*].sotinchitichluy").value(hasItem(DEFAULT_SOTINCHITICHLUY)))
             .andExpect(jsonPath("$.[*].phanLoai").value(hasItem(DEFAULT_PHAN_LOAI)))
             .andExpect(jsonPath("$.[*].type").value(hasItem(DEFAULT_TYPE)))
             .andExpect(jsonPath("$.[*].studentId").value(hasItem(DEFAULT_STUDENT_ID)));
@@ -235,6 +242,7 @@ public class MeanScoreResourceIT {
             .andExpect(jsonPath("$.diemtbtl10").value(DEFAULT_DIEMTBTL_10.doubleValue()))
             .andExpect(jsonPath("$.diemtbtl4").value(DEFAULT_DIEMTBTL_4.doubleValue()))
             .andExpect(jsonPath("$.sotinchidat").value(DEFAULT_SOTINCHIDAT))
+            .andExpect(jsonPath("$.sotinchitichluy").value(DEFAULT_SOTINCHITICHLUY))
             .andExpect(jsonPath("$.phanLoai").value(DEFAULT_PHAN_LOAI))
             .andExpect(jsonPath("$.type").value(DEFAULT_TYPE))
             .andExpect(jsonPath("$.studentId").value(DEFAULT_STUDENT_ID));
@@ -266,6 +274,7 @@ public class MeanScoreResourceIT {
             .diemtbtl10(UPDATED_DIEMTBTL_10)
             .diemtbtl4(UPDATED_DIEMTBTL_4)
             .sotinchidat(UPDATED_SOTINCHIDAT)
+            .sotinchitichluy(UPDATED_SOTINCHITICHLUY)
             .phanLoai(UPDATED_PHAN_LOAI)
             .type(UPDATED_TYPE)
             .studentId(UPDATED_STUDENT_ID);
@@ -284,6 +293,7 @@ public class MeanScoreResourceIT {
         assertThat(testMeanScore.getDiemtbtl10()).isEqualTo(UPDATED_DIEMTBTL_10);
         assertThat(testMeanScore.getDiemtbtl4()).isEqualTo(UPDATED_DIEMTBTL_4);
         assertThat(testMeanScore.getSotinchidat()).isEqualTo(UPDATED_SOTINCHIDAT);
+        assertThat(testMeanScore.getSotinchitichluy()).isEqualTo(UPDATED_SOTINCHITICHLUY);
         assertThat(testMeanScore.getPhanLoai()).isEqualTo(UPDATED_PHAN_LOAI);
         assertThat(testMeanScore.getType()).isEqualTo(UPDATED_TYPE);
         assertThat(testMeanScore.getStudentId()).isEqualTo(UPDATED_STUDENT_ID);
@@ -351,6 +361,7 @@ public class MeanScoreResourceIT {
             .andExpect(jsonPath("$.[*].diemtbtl10").value(hasItem(DEFAULT_DIEMTBTL_10.doubleValue())))
             .andExpect(jsonPath("$.[*].diemtbtl4").value(hasItem(DEFAULT_DIEMTBTL_4.doubleValue())))
             .andExpect(jsonPath("$.[*].sotinchidat").value(hasItem(DEFAULT_SOTINCHIDAT)))
+            .andExpect(jsonPath("$.[*].sotinchitichluy").value(hasItem(DEFAULT_SOTINCHITICHLUY)))
             .andExpect(jsonPath("$.[*].phanLoai").value(hasItem(DEFAULT_PHAN_LOAI)))
             .andExpect(jsonPath("$.[*].type").value(hasItem(DEFAULT_TYPE)))
             .andExpect(jsonPath("$.[*].studentId").value(hasItem(DEFAULT_STUDENT_ID)));

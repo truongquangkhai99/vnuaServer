@@ -20,7 +20,7 @@ describe('Service Tests', () => {
       service = injector.get(MeanScoreService);
       httpMock = injector.get(HttpTestingController);
 
-      elemDefault = new MeanScore(0, 0, 0, 0, 0, 0, 'AAAAAAA', 0, 0);
+      elemDefault = new MeanScore(0, 0, 0, 0, 0, 0, 0, 'AAAAAAA', 0, 0);
     });
 
     describe('Service methods', () => {
@@ -61,6 +61,7 @@ describe('Service Tests', () => {
             diemtbtl10: 1,
             diemtbtl4: 1,
             sotinchidat: 1,
+            sotinchitichluy: 1,
             phanLoai: 'BBBBBB',
             type: 1,
             studentId: 1
@@ -86,6 +87,7 @@ describe('Service Tests', () => {
             diemtbtl10: 1,
             diemtbtl4: 1,
             sotinchidat: 1,
+            sotinchitichluy: 1,
             phanLoai: 'BBBBBB',
             type: 1,
             studentId: 1

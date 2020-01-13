@@ -5,6 +5,7 @@ export interface IMeanScore {
   diemtbtl10?: number;
   diemtbtl4?: number;
   sotinchidat?: number;
+  sotinchitichluy?: number;
   phanLoai?: string;
   type?: number;
   studentId?: number;
@@ -18,6 +19,7 @@ export class MeanScore implements IMeanScore {
     public diemtbtl10?: number,
     public diemtbtl4?: number,
     public sotinchidat?: number,
+    public sotinchitichluy?: number,
     public phanLoai?: string,
     public type?: number,
     public studentId?: number

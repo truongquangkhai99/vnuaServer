@@ -39,6 +39,9 @@ public class MeanScore implements Serializable {
     @Column(name = "sotinchidat")
     private Integer sotinchidat;
 
+    @Column(name = "sotinchitichluy")
+    private Integer sotinchitichluy;
+
     @Column(name = "phan_loai")
     private String phanLoai;
 
@@ -122,6 +125,19 @@ public class MeanScore implements Serializable {
         this.sotinchidat = sotinchidat;
     }
 
+    public Integer getSotinchitichluy() {
+        return sotinchitichluy;
+    }
+
+    public MeanScore sotinchitichluy(Integer sotinchitichluy) {
+        this.sotinchitichluy = sotinchitichluy;
+        return this;
+    }
+
+    public void setSotinchitichluy(Integer sotinchitichluy) {
+        this.sotinchitichluy = sotinchitichluy;
+    }
+
     public String getPhanLoai() {
         return phanLoai;
     }
@@ -187,6 +203,7 @@ public class MeanScore implements Serializable {
             ", diemtbtl10=" + getDiemtbtl10() +
             ", diemtbtl4=" + getDiemtbtl4() +
             ", sotinchidat=" + getSotinchidat() +
+            ", sotinchitichluy=" + getSotinchitichluy() +
             ", phanLoai='" + getPhanLoai() + "'" +
             ", type=" + getType() +
             ", studentId=" + getStudentId() +

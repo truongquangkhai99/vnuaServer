@@ -15,6 +15,10 @@ import { RouterModule } from '@angular/router';
       {
         path: 'mean-score',
         loadChildren: () => import('./mean-score/mean-score.module').then(m => m.VnuaServerMeanScoreModule)
+      },
+      {
+        path: 'teacher',
+        loadChildren: () => import('./teacher/teacher.module').then(m => m.VnuaServerTeacherModule)
       }
       /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
     ])
