@@ -18,6 +18,9 @@
     "search": "Search",
     "searchStudentInformation": "Search Student Information",
     "searchTeacherInformation": "Search Teacher Information",
-    "try": "try"
+    "try": "try",
+    "search_student_hint": "Enter student id, name, address, class ...",
+    "search_teacher_hint": "Enter teacher name ...",
+    "best_score_of_vnua": "Best Score of VNUA"
   }
 }

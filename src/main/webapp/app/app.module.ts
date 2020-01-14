@@ -16,6 +16,7 @@ import { ActiveMenuDirective } from './layouts/navbar/active-menu.directive';
 import { ErrorComponent } from './layouts/error/error.component';
 
 import { VnuaServerHTeacherModule } from './home/hteacher/hteacher.module';
+import { VnuaServerHScoreModule } from './home/hscore/hscore.module';
 @NgModule({
   imports: [
     BrowserModule,
@@ -24,6 +25,7 @@ import { VnuaServerHTeacherModule } from './home/hteacher/hteacher.module';
     VnuaServerHomeModule,
 
     VnuaServerHTeacherModule,
+    VnuaServerHScoreModule,
 
     // jhipster-needle-angular-add-module JHipster will add new module here
     VnuaServerEntityModule,

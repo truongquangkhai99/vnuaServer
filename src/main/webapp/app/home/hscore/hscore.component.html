@@ -11,7 +11,13 @@
     }
 </style>
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-4">
+        <p class="lead"><strong jhiTranslate="home.best_score_of_vnua">Điểm cao nhất trường</strong></p>
+        <ol>
+            <li *ngFor="let student of topStudents; let i = index" [style.color]="i<10 ? 'red' : i<20?'blue': i<30?'green' : 'black'"> {{ student.fullname }} ({{ student.diemtbtl10 }})</li>
+        </ol>
+    </div>
+    <div class="col-md-8">
         <div class="col-md-12">
 
             <p class="lead"><strong jhiTranslate="home.searchTeacherInformation"></strong></p>

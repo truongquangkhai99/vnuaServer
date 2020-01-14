@@ -1,4 +1,5 @@
 package com.luantm.vnua.domain;
+import com.luantm.vnua.web.rest.dto.StudentDTO;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
@@ -15,6 +16,21 @@ import java.time.LocalDate;
 @Table(name = "student")
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 @org.springframework.data.elasticsearch.annotations.Document(indexName = "student")
+
+@SqlResultSetMapping(
+    name = "StudentDTOMapping",
+    classes = @ConstructorResult(
+        targetClass = StudentDTO.class,
+        columns = {
+            @ColumnResult(name = "student_id"),
+            @ColumnResult(name = "fullname"),
+            @ColumnResult(name = "sex"),
+            @ColumnResult(name = "birth_day", type=LocalDate.class),
+            @ColumnResult(name = "lop"),
+            @ColumnResult(name = "diemtbtl_10")
+        }
+    )
+)
 public class Student implements Serializable {
 
     private static final long serialVersionUID = 1L;

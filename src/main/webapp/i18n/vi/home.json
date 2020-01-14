@@ -18,6 +18,9 @@
     "search": "Tìm kiếm",
     "searchStudentInformation": "Tìm kiếm thông tin sinh viên",
     "searchTeacherInformation": "Tìm kiếm thông tin giáo viên",
-    "try": "Xem thử"
+    "try": "Xem thử",
+    "search_student_hint": "Tên hoặc mã sv, quê, bộ môn, ...",
+    "search_teacher_hint": "Tên giáo viên...",
+    "best_score_of_vnua": "Điểm cao nhất VNUA"
   }
 }
