@@ -21,6 +21,11 @@
     "try": "Xem thử",
     "search_student_hint": "Tên hoặc mã sv, quê, bộ môn, ...",
     "search_teacher_hint": "Tên giáo viên...",
-    "best_score_of_vnua": "Điểm cao nhất VNUA"
+    "best_score_of_vnua": "Điểm cao nhất VNUA",
+    "find_student_info": "Tìm kiếm thông tin sinh viên",
+    "find_teacher_info": "Tìm kiếm thông tin giáo viên",
+    "find_student_info_detail": "Tìm theo tên, lớp, địa chỉ ...",
+    "find_score": "Xem điểm thi",
+    "find_score_detail": "Xem danh sách các bạn điểm cao nhất trường"
   }
 }

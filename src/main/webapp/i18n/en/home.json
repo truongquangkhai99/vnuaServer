@@ -21,6 +21,11 @@
     "try": "try",
     "search_student_hint": "Enter student id, name, address, class ...",
     "search_teacher_hint": "Enter teacher name ...",
-    "best_score_of_vnua": "Best Score of VNUA"
+    "best_score_of_vnua": "Best Score of VNUA",
+    "find_student_info": "Find Student Information",
+    "find_teacher_info": "Find Teacher Information",
+    "find_student_info_detail": "Find by name, address, class ...",
+    "find_score": "Find score",
+    "find_score_detail": "Best of VNUA"
   }
 }

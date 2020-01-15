@@ -46,7 +46,7 @@ public class HStudentResource {
         List students = em.createNativeQuery("SELECT ms.student_id, s.fullname, s.sex, s.lop, s.birth_day, ms.diemtbtl_10 " +
             "FROM mean_score ms " +
             "JOIN student s ON ms.student_id = s.student_id " +
-            "WHERE ms.type = 1 and ms.diemtbtl_10 is not null " +
+            "WHERE ms.type = 1 and ms.diemtbtl_10 is not null and ms.diemtbtl_10 < 10 " +
             "ORDER BY diemtbtl_10 desc " +
             "LIMIT 100 ", "StudentDTOMapping").getResultList();
 

@@ -58,7 +58,6 @@ export class HScoreComponent implements OnInit, OnDestroy {
   }
   protected onSuccess(data: any[] | null): void {
     this.topStudents = data ? data : [];
-    console.log(this.topStudents);
   }
 
   protected onError(): void {

@@ -14,65 +14,9 @@
     <div class="col-md-4">
         <p class="lead"><strong jhiTranslate="home.best_score_of_vnua">Điểm cao nhất trường</strong></p>
         <ol>
-            <li *ngFor="let student of topStudents; let i = index" [style.color]="i<10 ? 'red' : i<20?'blue': i<30?'green' : 'black'"> {{ student.fullname }} ({{ student.diemtbtl10 }})</li>
+            <li *ngFor="let student of topStudents; let i = index" [style.color]="i<10 ? 'red' : i<20?'blue': i<30?'green' : 'black'">
+                {{ student.fullname }} - {{ student.studentID }} ({{ student.diemtbtl10 }})
+            </li>
         </ol>
     </div>
-    <div class="col-md-8">
-        <div class="col-md-12">
-
-            <p class="lead"><strong jhiTranslate="home.searchTeacherInformation"></strong></p>
-
-            <div class="col-md-4">
-                <form name="searchForm" role="form" novalidate (ngSubmit)="search()" [formGroup]="searchForm">
-                    <div>
-                        <jhi-alert-error></jhi-alert-error>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="query" id="field_query" formControlName="query" placeholder="{{'home.search_teacher_hint' | translate}}"/>
-                        </div>
-                        <div>
-                            <button class="btn btn-primary float-right jh-create-entity create-score">
-                                <fa-icon [icon]="'search'"></fa-icon>
-                                <span  jhiTranslate="home.search">
-                                Tìm kiếm
-                            </span>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-                <div style="margin-bottom: 10px; clear: both"></div>
-            </div>
-
-            <div class="table-responsive" *ngIf="teachers?.length > 0">
-                <table class="table table-striped" aria-describedby="page-heading">
-                    <thead>
-                    <tr>
-                        <th scope="col"><span jhiTranslate="global.field.id">ID</span></th>
-                        <th scope="col"><span jhiTranslate="vnuaServerApp.teacher.teacherID">Teacher ID</span></th>
-                        <th scope="col"><span jhiTranslate="vnuaServerApp.teacher.fullname">Fullname</span></th>
-                        <th scope="col"></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr *ngFor="let teacher of teachers ;">
-                        <td><a [routerLink]="['/teacher', teacher.id, 'view' ]">{{teacher.id}}</a></td>
-                        <td>{{teacher.teacherID}}</td>
-                        <td>{{teacher.fullname}}</td>
-                        <td class="text-right">
-                            <div class="btn-group">
-                                <button type="submit"
-                                        [routerLink]="['/teacher', teacher.id, 'view' ]"
-                                        class="btn btn-info btn-sm">
-                                    <fa-icon [icon]="'eye'"></fa-icon>
-                                    <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-
-        </div>
-    </div>
-
 </div>

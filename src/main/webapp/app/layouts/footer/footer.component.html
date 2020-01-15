@@ -19,17 +19,17 @@
 
                         <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
                         <div class="title">
-                            <h4>Tìm kiếm thông tin sinh viên</h4>
+                            <h4 jhiTranslate="home.find_student_info">Tìm kiếm thông tin sinh viên</h4>
                         </div>
 
                         <div class="text">
-                            <span>Tìm họ tên, mã sinh viên</span>
+                            <span jhiTranslate="home.find_student_info_detail">Tìm họ tên, mã sinh viên</span>
                         </div>
                         <button type="submit"
                                 [routerLink]="['']"
                                 class="btn btn-info btn-sm">
                             <fa-icon [icon]="'eye'"></fa-icon>
-                            <span class="d-none d-md-inline" jhiTranslate="home.try"></span>
+                            <span class="d-none d-md-inline" jhiTriTanslate="home.try"></span>
                         </button>
                     </div>
                 </div>
@@ -38,11 +38,11 @@
 
                         <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
                         <div class="title">
-                            <h4>Tìm kiếm thông tin giáo viên</h4>
+                            <h4 jhiTranslate="home.find_teacher_info">Tìm kiếm thông tin giáo viên</h4>
                         </div>
 
                         <div class="text">
-                            <span>Tìm kiếm thông tin giáo viên</span>
+                            <span jhiTranslate="home.find_teacher_info">Tìm kiếm thông tin giáo viên</span>
                         </div>
                         <button type="submit"
                                 [routerLink]="['hteacher']"
@@ -57,13 +57,18 @@
 
                         <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
                         <div class="title">
-                            <h4>Xem điểm thi</h4>
+                            <h4 jhiTranslate="home.find_score">Xem điểm thi</h4>
                         </div>
 
                         <div class="text">
-                            <span>Xem điểm thi</span>
+                            <span jhiTranslate="home.find_score_detail">Xem điểm thi</span>
                         </div>
-                        <a href="#">Đang phát triển</a>
+                        <button type="submit"
+                                [routerLink]="['hscore']"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="home.try"></span>
+                        </button>
                     </div>
                 </div>
 
