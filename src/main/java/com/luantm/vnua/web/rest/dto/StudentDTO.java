@@ -17,9 +17,6 @@ public class StudentDTO implements Serializable {
 
     private Float diemtbtl10;
 
-    public StudentDTO() {
-    }
-
     public StudentDTO(Integer studentID, String fullname, String sex, LocalDate birthDay, String lop, Float diemtbtl10) {
         this.studentID = studentID;
         this.fullname = fullname;

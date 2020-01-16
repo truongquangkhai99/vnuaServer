@@ -17,6 +17,7 @@ import { FormBuilder } from '@angular/forms';
 })
 export class HScoreComponent implements OnInit, OnDestroy {
   topStudents?: any[];
+  students?: any[];
   account: Account | null = null;
   authSubscription?: Subscription;
 
@@ -56,6 +57,16 @@ export class HScoreComponent implements OnInit, OnDestroy {
       () => this.onError()
     );
   }
+
+  getClassesByStudentID(): void {
+    this.hScoreService.getClassesByStudentID(this.searchForm.value.query).subscribe(
+      (res: HttpResponse<any[]>) => {
+        this.students = res.body ? res.body : [];
+      },
+      () => this.onError()
+    );
+  }
+
   protected onSuccess(data: any[] | null): void {
     this.topStudents = data ? data : [];
   }

@@ -11,6 +11,52 @@
     }
 </style>
 <div class="row">
+    <div class="col-md-8">
+        <form name="searchForm" role="form" novalidate (ngSubmit)="getClassesByStudentID()" [formGroup]="searchForm">
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="query" id="field_query" formControlName="query" placeholder="{{'vnuaServerApp.student.studentID' | translate}}"/>
+                </div>
+                <div>
+                    <button class="btn btn-primary float-right jh-create-entity create-score">
+                        <fa-icon [icon]="'search'"></fa-icon>
+                        <span  jhiTranslate="home.search">
+                        Xem điểm
+                    </span>
+                    </button>
+                </div>
+                <div style="margin-bottom: 10px; clear: both"></div>
+            </div>
+            <div class="table-responsive" *ngIf="students?.length > 0">
+                <table class="table table-striped" aria-describedby="page-heading">
+                    <thead>
+                    <tr>
+                        <th scope="col"><span>Student ID</span></th>
+                        <th scope="col"><span>Fullname</span></th>
+                        <th scope="col"><span>Sex</span></th>
+                        <th scope="col"><span>Birthday</span></th>
+                        <th scope="col"><span>Diem TB TL 10</span></th>
+                        <th scope="col"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let student of students ;">
+                        <td><a [routerLink]="['/student', student.id, 'view' ]">{{student.studentID}}</a></td>
+                        <td>{{student.fullname}}</td>
+                        <td>{{student.sex}}</td>
+                        <td>{{student.birthDay}}</td>
+                        <td>{{student.diemtbtl10}}</td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </form>
+
+    </div>
+
     <div class="col-md-4">
         <p class="lead"><strong jhiTranslate="home.best_score_of_vnua">Điểm cao nhất trường</strong></p>
         <ol>

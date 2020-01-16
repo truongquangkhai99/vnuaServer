@@ -1,5 +1,6 @@
 package com.luantm.vnua.domain;
 import com.luantm.vnua.web.rest.dto.StudentDTO;
+import com.luantm.vnua.web.rest.dto.StudentRankDTO;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
@@ -16,7 +17,6 @@ import java.time.LocalDate;
 @Table(name = "student")
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 @org.springframework.data.elasticsearch.annotations.Document(indexName = "student")
-
 @SqlResultSetMapping(
     name = "StudentDTOMapping",
     classes = @ConstructorResult(
@@ -28,6 +28,20 @@ import java.time.LocalDate;
             @ColumnResult(name = "birth_day", type=LocalDate.class),
             @ColumnResult(name = "lop"),
             @ColumnResult(name = "diemtbtl_10")
+        }
+    )
+)
+
+@SqlResultSetMapping(
+    name = "StudentRankDTOMapping",
+    classes = @ConstructorResult(
+        targetClass = StudentRankDTO.class,
+        columns = {
+            @ColumnResult(name = "student_id"),
+            @ColumnResult(name = "rank_class"),
+            @ColumnResult(name = "rank_khoa"),
+            @ColumnResult(name = "rank_khoa_hoc"),
+            @ColumnResult(name = "rank_vnua")
         }
     )
 )
